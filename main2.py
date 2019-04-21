@@ -21,7 +21,7 @@ async def on_message(message):
         await message.channel.send('Hello!')
 
     if message.content.startswith('$openthedoor'):
-        await message.channel.send("I'm sorry, I cannot do that.")
+        await message.channel.send("I'm sorry %s, I cannot do that." % message.author )
 
     if message.content.startswith('$whisper'):
         await message.author.send("Hello %s." % message.author)
@@ -49,4 +49,4 @@ async def on_message(message):
    # if message.content.startswith('$doit'):
    #     pid = subprocess.Popen([sys.executable, r'C:\Users\cm\PycharmProjects\untitled\main.py'])
 
-client.run('NTI0OTEzOTE1NDYxODk0MTU1.XLvNAA.U0_UAuKMM5_Wq3lVRiROkFUpbAM')
+client.run('')
